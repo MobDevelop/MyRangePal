@@ -1,0 +1,2 @@
+export const SAVING_SCORE = "SAVING_SCORE"
+export const SAVE_APP_DATA = "SAVE_APP_DATA"

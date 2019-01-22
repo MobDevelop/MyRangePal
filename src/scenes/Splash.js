@@ -1,21 +1,45 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, ImageBackground, Alert, KeyboardAvoidingView } from 'react-native';
+import { Text, View, ImageBackground } from 'react-native';
 import { sanFranciscoWeights } from 'react-native-typography'
 import Styles from '../styles/GlobalStyle'
-const back = "https://i.pinimg.com/474x/da/23/c4/da23c46b5174d25ed20efcdf8e42c10c.jpg";
+import NavigationButton from '../component/NavigationButton'
+import back from '../util/loadImage'
 export default class Splash extends Component {
     static navigationOptions = {
 		title: 'Splash',
-		header: null
+        header: null,
+        headerForceInset: {top: 'never'},
     }
-
     render() {
         return (
             <View style = {Styles.flexOne}>
-                <ImageBackground source = {{uri:back}} style={Styles.resolution} resizeMode = 'cover'>
-                    <Text style = {[Styles.textFont, sanFranciscoWeights.black, Styles.alignVCenter, Styles.colorWhite]}>My Range PAL</Text>
+                <ImageBackground source = {back} style={Styles.resolution} resizeMode = 'cover'>
+                    <Text style = {[Styles.textSize40, Styles.marginTop200, sanFranciscoWeights.black, Styles.alignSelfCenter, Styles.colorWhite]}>My Range PAL</Text>
+                    <View style = {[Styles.flexColumn, Styles.bottom20Pos,Styles.alignSelfCenter]}>
+                        <NavigationButton text = "TargetScan" iconName = "crosshairs"></NavigationButton>
+                        <NavigationButton text = "Shooting Score" actionName = "ShootingScore" action = {this.props.navigation.navigate} iconName = "pencil-square-o"></NavigationButton>
+                        <NavigationButton text = "Calculate Score" iconName = "calculator"></NavigationButton>
+                        <NavigationButton text = "Timer" iconName = "clock-o"></NavigationButton>
+                    </View>
                 </ImageBackground>
-            </View> 
+            </View>
         );
     }
 }
+
+/*function mapStateToProps (state) {
+    return {
+        appData: state.appData
+    }
+}
+
+function mapDispatchToProps (dispatch) {
+    return {
+        fetchData: () => dispatch(fetchData())
+    }
+}
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Splash)*/
