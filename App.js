@@ -13,7 +13,7 @@ import {createStackNavigator,createAppContainer} from "react-navigation";
 import Splash from './src/scenes/Splash'
 import store from './src/store/store'
 import firebase from "firebase";
-
+import config from './src/config/FirebaseConfig'
 import AddScore from './src/scenes/AddScore'
 import ShootingScore from './src/scenes/ShootingScore'
 const AppNavigator = createStackNavigator({
@@ -29,14 +29,7 @@ const AppContainer = createAppContainer(AppNavigator);
 
 export default class App extends React.Component{
   componentWillMount() {
-    var config = {
-      apiKey: "AIzaSyALmo3c7LhuY7fUODfZYlwgwBdGZNaaehY",
-      authDomain: "myrangepal.firebaseapp.com",
-      databaseURL: "https://myrangepal.firebaseio.com",
-      projectId: "myrangepal",
-      storageBucket: "myrangepal.appspot.com",
-      messagingSenderId: "365454464046"
-    };
+    
     firebase.initializeApp(config);
     if (!firebase.apps.length) {
       firebase.initializeApp({});

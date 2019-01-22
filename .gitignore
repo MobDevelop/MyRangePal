@@ -64,3 +64,5 @@ Pods/
 *.plist
 # project workspace
 *.xcworkspace
+# api key config
+config/
