@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -13,6 +14,8 @@
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* MyRangePalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MyRangePalTests.m */; };
 		0221E31121F6215500E482CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0221E31021F6215500E482CD /* GoogleService-Info.plist */; };
+		0238118C21F80FA000DF4DA9 /* libRCTPushNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0238118921F80F3800DF4DA9 /* libRCTPushNotification.a */; };
+		0238123821F86AC800DF4DA9 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0238123721F86AC800DF4DA9 /* AirshipConfig.plist */; };
 		02BA7EDD62884FA880738B52 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 005F065DE53F4B81BB3F6129 /* Zocial.ttf */; };
 		0558C4F77379452AB66092AC /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A2CA9E987D41B6B553AB2C /* FontAwesome.ttf */; };
 		10D7055EF0772F7EED942E80 /* libPods-MyRangePalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEB379EAF711F370A636DE1 /* libPods-MyRangePalTests.a */; };
@@ -51,6 +54,7 @@
 		7016FB26AF214CDD80EE4C5B /* libRNVectorIcons-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4B41D59B684E7387819E9D /* libRNVectorIcons-tvOS.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		87B668FD73B44635840C1B98 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EB02900C3A4DE28CDA9416 /* libRNFirebase.a */; };
+		8BFB503E53CD4262B6F877A5 /* libUARCTModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD68F9530904FC8BB2CD45D /* libUARCTModule.a */; };
 		A4CB71E8E70048B3B51BD94E /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2424073043204F6A84F8C6D5 /* Foundation.ttf */; };
 		A9430ACC523D4CCA92B0D216 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C00F583F3834ACC83E21781 /* libRNGestureHandler.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
@@ -112,6 +116,27 @@
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNFirebase;
+		};
+		0238118821F80F3800DF4DA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0238118321F80F3800DF4DA9 /* RCTPushNotification.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTPushNotification;
+		};
+		0238118A21F80F3800DF4DA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0238118321F80F3800DF4DA9 /* RCTPushNotification.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D05745F1DE6004600184BB4;
+			remoteInfo = "RCTPushNotification-tvOS";
+		};
+		0238123521F86A3C00DF4DA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41EEA1498F0E4E21968C6BC6 /* UARCTModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E4D17C21EBA7FAA0032DED3;
+			remoteInfo = UARCTModule;
 		};
 		02AF077F21F4E63C0090A1C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -379,6 +404,9 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* MyRangePalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRangePalTests.m; sourceTree = "<group>"; };
 		0221E31021F6215500E482CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "MyRangePal/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0238117921F80E7600DF4DA9 /* MyRangePal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MyRangePal.entitlements; path = MyRangePal/MyRangePal.entitlements; sourceTree = "<group>"; };
+		0238118321F80F3800DF4DA9 /* RCTPushNotification.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTPushNotification.xcodeproj; path = "../node_modules/react-native/Libraries/PushNotificationIOS/RCTPushNotification.xcodeproj"; sourceTree = "<group>"; };
+		0238123721F86AC800DF4DA9 /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AirshipConfig.plist; path = MyRangePal/AirshipConfig.plist; sourceTree = "<group>"; };
 		028BA8DC106A95661BB9C7EE /* Pods-MyRangePal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRangePal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyRangePal/Pods-MyRangePal.debug.xcconfig"; sourceTree = "<group>"; };
 		045A0EC3403558C0A36250D1 /* Pods-MyRangePal-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRangePal-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyRangePal-tvOSTests/Pods-MyRangePal-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		06EB02900C3A4DE28CDA9416 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
@@ -402,6 +430,7 @@
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2772B54F16F0A454DBED1B /* libPods-MyRangePal-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyRangePal-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3290744D235A49258867809F /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		41EEA1498F0E4E21968C6BC6 /* UARCTModule.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = UARCTModule.xcodeproj; path = "../node_modules/urbanairship-react-native/ios/UARCTModule.xcodeproj"; sourceTree = "<group>"; };
 		4EE403B7F72F1DFDD6C3E2C5 /* Pods-MyRangePal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRangePal.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyRangePal/Pods-MyRangePal.release.xcconfig"; sourceTree = "<group>"; };
 		540B6AAC5AC1460B8FA2C7E3 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		5B30D732C22BF795769ED656 /* Pods-MyRangePalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRangePalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyRangePalTests/Pods-MyRangePalTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -421,6 +450,7 @@
 		C0BFD3198C3F4710A7A77BCA /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		C4493626FB0B46E3ABF90492 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 		C7B1803836C84BD5B0EB306F /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNGestureHandler.xcodeproj; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; };
+		CBD68F9530904FC8BB2CD45D /* libUARCTModule.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libUARCTModule.a; sourceTree = "<group>"; };
 		CF4E8482ADE040668A44A98D /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		D306581E079B42EDA660C07B /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		D5272049CEFE59F35DAB5F17 /* libPods-MyRangePal-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyRangePal-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -445,6 +475,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0238118C21F80FA000DF4DA9 /* libRCTPushNotification.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -461,6 +492,7 @@
 				4389BC575C4244F7BD55FBC9 /* libRNVectorIcons.a in Frameworks */,
 				1C23F8592521F3F19F58715E /* libPods-MyRangePal.a in Frameworks */,
 				87B668FD73B44635840C1B98 /* libRNFirebase.a in Frameworks */,
+				8BFB503E53CD4262B6F877A5 /* libUARCTModule.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +592,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		0238118421F80F3800DF4DA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0238118921F80F3800DF4DA9 /* libRCTPushNotification.a */,
+				0238118B21F80F3800DF4DA9 /* libRCTPushNotification-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0238123221F86A3C00DF4DA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0238123621F86A3C00DF4DA9 /* libUARCTModule.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		02AF075421F4E6380090A1C6 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -567,6 +616,7 @@
 				D9058152A28A43959B167223 /* libRNVectorIcons.a */,
 				0C4B41D59B684E7387819E9D /* libRNVectorIcons-tvOS.a */,
 				06EB02900C3A4DE28CDA9416 /* libRNFirebase.a */,
+				CBD68F9530904FC8BB2CD45D /* libUARCTModule.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -611,11 +661,13 @@
 		13B07FAE1A68108700A75B9A /* MyRangePal */ = {
 			isa = PBXGroup;
 			children = (
+				0238117921F80E7600DF4DA9 /* MyRangePal.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				0238123721F86AC800DF4DA9 /* AirshipConfig.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				0221E31021F6215500E482CD /* GoogleService-Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -701,6 +753,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				0238118321F80F3800DF4DA9 /* RCTPushNotification.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -716,6 +769,7 @@
 				C7B1803836C84BD5B0EB306F /* RNGestureHandler.xcodeproj */,
 				EE2F412FA49141FF8FEC106B /* RNVectorIcons.xcodeproj */,
 				C4493626FB0B46E3ABF90492 /* RNFirebase.xcodeproj */,
+				41EEA1498F0E4E21968C6BC6 /* UARCTModule.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -812,6 +866,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				37E3597EC5EC0DBCC5A13EBF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -876,6 +931,14 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = FR6TLV6AVW;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -929,6 +992,10 @@
 					ProjectRef = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
 				},
 				{
+					ProductGroup = 0238118421F80F3800DF4DA9 /* Products */;
+					ProjectRef = 0238118321F80F3800DF4DA9 /* RCTPushNotification.xcodeproj */;
+				},
+				{
 					ProductGroup = 139105B71AF99BAD00B5F7CC /* Products */;
 					ProjectRef = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
 				},
@@ -959,6 +1026,10 @@
 				{
 					ProductGroup = 02AF077A21F4E63B0090A1C6 /* Products */;
 					ProjectRef = EE2F412FA49141FF8FEC106B /* RNVectorIcons.xcodeproj */;
+				},
+				{
+					ProductGroup = 0238123221F86A3C00DF4DA9 /* Products */;
+					ProjectRef = 41EEA1498F0E4E21968C6BC6 /* UARCTModule.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1012,6 +1083,27 @@
 			fileType = archive.ar;
 			path = libRNFirebase.a;
 			remoteRef = 0221E35921F6231300E482CD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0238118921F80F3800DF4DA9 /* libRCTPushNotification.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTPushNotification.a;
+			remoteRef = 0238118821F80F3800DF4DA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0238118B21F80F3800DF4DA9 /* libRCTPushNotification-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTPushNotification-tvOS.a";
+			remoteRef = 0238118A21F80F3800DF4DA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0238123621F86A3C00DF4DA9 /* libUARCTModule.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUARCTModule.a;
+			remoteRef = 0238123521F86A3C00DF4DA9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		02AF078021F4E63C0090A1C6 /* libRNGestureHandler.a */ = {
@@ -1278,6 +1370,7 @@
 				3EFDBD36BE1C4D84975BB4CC /* AntDesign.ttf in Resources */,
 				DF950CD82EBE438CBDEB0C53 /* Entypo.ttf in Resources */,
 				F36B6A8C415E4BCAA21E317E /* EvilIcons.ttf in Resources */,
+				0238123821F86AC800DF4DA9 /* AirshipConfig.plist in Resources */,
 				1C93AA4315EA44ACB9A28E4F /* Feather.ttf in Resources */,
 				0558C4F77379452AB66092AC /* FontAwesome.ttf in Resources */,
 				3B864EE8103B4C8D9C7A1C8A /* FontAwesome5_Brands.ttf in Resources */,
@@ -1339,6 +1432,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		37E3597EC5EC0DBCC5A13EBF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyRangePal/Pods-MyRangePal-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/UrbanAirship-iOS-SDK/AirshipResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AirshipResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyRangePal/Pods-MyRangePal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		6F436D64FBBC0F7AAA35AE6C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1508,12 +1623,14 @@
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/urbanairship-react-native/ios/UARCTModule",
 				);
 				INFOPLIST_FILE = MyRangePalTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1541,12 +1658,14 @@
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/urbanairship-react-native/ios/UARCTModule",
 				);
 				INFOPLIST_FILE = MyRangePalTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1567,14 +1686,17 @@
 			baseConfigurationReference = 028BA8DC106A95661BB9C7EE /* Pods-MyRangePal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyRangePal/MyRangePal.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = FR6TLV6AVW;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native/Libraries",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/urbanairship-react-native/ios/UARCTModule",
 				);
 				INFOPLIST_FILE = MyRangePal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1594,13 +1716,16 @@
 			baseConfigurationReference = 4EE403B7F72F1DFDD6C3E2C5 /* Pods-MyRangePal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyRangePal/MyRangePal.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR6TLV6AVW;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native/Libraries",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/urbanairship-react-native/ios/UARCTModule",
 				);
 				INFOPLIST_FILE = MyRangePal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1633,11 +1758,13 @@
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/urbanairship-react-native/ios/UARCTModule",
 				);
 				INFOPLIST_FILE = "MyRangePal-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1673,11 +1800,13 @@
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/urbanairship-react-native/ios/UARCTModule",
 				);
 				INFOPLIST_FILE = "MyRangePal-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1712,11 +1841,13 @@
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/urbanairship-react-native/ios/UARCTModule",
 				);
 				INFOPLIST_FILE = "MyRangePal-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1751,11 +1882,13 @@
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/urbanairship-react-native/ios/UARCTModule",
 				);
 				INFOPLIST_FILE = "MyRangePal-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",

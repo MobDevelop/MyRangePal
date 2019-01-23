@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, Alert, View, ImageBackground,Keyboard, TouchableOpacity, ListView, Slider, TouchableWithoutFeedback, TouchableHighlight } from 'react-native';
+import { Animated, Easing, Text, Alert, View,PushNotificationIOS, ImageBackground,Keyboard, TouchableOpacity, ListView, Slider, TouchableWithoutFeedback, TouchableHighlight } from 'react-native';
 import { sanFranciscoWeights } from 'react-native-typography'
 import Styles from '../styles/GlobalStyle'
 import NavigationButton from '../component/NavigationButton'
@@ -14,13 +14,34 @@ import Spinner from 'react-native-loading-spinner-overlay';
 const back = require("../../image/back.jpg");
 const UserID = "test";
 class AddScore extends Component {
+    state = {
+        fadeAnim: new Animated.Value(0),  // Initial value for opacity: 0
+      }
     constructor(props){
         super(props)
+         PushNotificationIOS.addEventListener('registrationError', function(message, key){
+            console.log('An error occurred: ', message);
+         });
+         PushNotificationIOS.addEventListener('register', function(token){
+            console.log('You are registered and the device token is: ',token)
+         });
+         PushNotificationIOS.requestPermissions();
+
     }
     static navigationOptions = {
 		title: 'AddScore',
 		header: null
     }
+    componentDidMount() {
+        Animated.timing(                  
+          this.state.fadeAnim,            
+          {
+            toValue: 1,                   
+            duration: 1000,
+            useNativeDriver: true,
+          }
+        ).start();                        
+      }
     setRadioValue = ( value) => {
         var selLabel = "";
         var count = 3;
@@ -109,6 +130,7 @@ class AddScore extends Component {
     }
     render = () => {
         this.checkStatus()
+        let { fadeAnim } = this.state;
         var seriesList = [];
         for (let i = 0; i < this.props.appData.seriesCount; i++){
             seriesList.push (
@@ -130,7 +152,7 @@ class AddScore extends Component {
             )
         }
         return (
-            <View style = {Styles.flexOne}>
+            <Animated.View style = {[Styles.flexOne,{opacity: fadeAnim}]}>
                 <Spinner
                     visible={this.props.saving == 1}
                     textContent={'Loading...'}
@@ -214,7 +236,7 @@ class AddScore extends Component {
                         </SafeAreaView>
                     </ImageBackground>
                 </TouchableWithoutFeedback>
-            </View>
+            </Animated.View>
         );
     }
 }

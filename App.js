@@ -16,13 +16,19 @@ import firebase from "firebase";
 import config from './src/config/FirebaseConfig'
 import AddScore from './src/scenes/AddScore'
 import ShootingScore from './src/scenes/ShootingScore'
+import crossFade from './src/animation/crossFade'
 const AppNavigator = createStackNavigator({
   Splash: {screen:Splash, params: {name: 'Splash'}},
   ShootingScore: {screen:ShootingScore, params: {name: 'ShootingScore'}},
   AddScore: {screen:AddScore, params: {name: 'AddScore'}},
 },
-{
-  initialRouteName: 'Splash'
+{ 
+  headerMode: 'none',
+  initialRouteName: 'Splash',
+  defaultNavigationOptions: {
+    gesturesEnabled: false,
+  },
+  transitionConfig: crossFade
 });
 
 const AppContainer = createAppContainer(AppNavigator);
